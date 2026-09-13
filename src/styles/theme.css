@@ -1,0 +1,239 @@
+:root {
+  --color-primary: #173b57;
+  --color-primary-light: #245d7a;
+  --color-secondary: #168c8c;
+  --color-accent: #f4a261;
+  --color-background: #f6f9fc;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-text-muted: #64748b;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.site-container {
+  width: min(1400px, calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+@media (max-width: 575.98px) {
+  .site-container {
+    width: min(100% - 2rem, 1400px);
+  }
+}
+
+
+.portfolio-navbar {
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-primary-light)
+  );
+  box-shadow: 0 2px 12px rgba(23, 59, 87, 0.15);
+}
+
+.portfolio-navbar .navbar-brand {
+  color: var(--color-surface);
+}
+
+.portfolio-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.portfolio-navbar .nav-link:hover,
+.portfolio-navbar .nav-link:focus {
+  color: var(--color-accent);
+}
+
+/* Hero Section */
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  padding: 6.5rem 0;
+  background-origin: border-box;
+  background: linear-gradient(
+      120deg,
+      rgba(246, 249, 252, 0.98) 0%,
+      rgba(233, 246, 247, 0.92) 100%
+    );
+}
+
+.hero-section::after {
+  position: absolute;
+  top: -180px;
+  right: -140px;
+  width: 420px;
+  height: 420px;
+  content: "";
+  background-color: rgba(22, 140, 140, 0.1);
+  border-radius: 50%;
+  filter: blur(8px);
+}
+
+.hero-section .site-container {
+  position: relative;
+  z-index: 1;
+  /* max-width: 1400px; */
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.9rem;
+  color: var(--color-primary);
+  background-color: rgba(22, 140, 140, 0.1);
+  border: 1px solid rgba(22, 140, 140, 0.25);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.hero-badge i {
+  color: var(--color-secondary);
+  font-size: 0.5rem;
+}
+
+.hero-introduction {
+  color: var(--color-secondary);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.hero-title {
+  max-width: 760px;
+  color: var(--color-primary);
+  font-size: clamp(2.6rem, 5vw, 4.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.hero-highlight {
+  color: var(--color-secondary);
+}
+
+.hero-description {
+  max-width: 680px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.hero-primary-button {
+  color: var(--color-surface);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.hero-primary-button:hover,
+.hero-primary-button:focus {
+  color: var(--color-surface);
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+.hero-primary-button,
+.hero-section .btn-outline-primary {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.65rem;
+  transition:
+    transform 150ms ease,
+    background-color 150ms ease;
+}
+
+.hero-section .btn-outline-primary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.hero-section .btn-outline-primary:hover,
+.hero-section .btn-outline-primary:focus {
+  color: var(--color-surface);
+  background-color: var(--color-primary);
+}
+
+.hero-social-link {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero-social-link:hover,
+.hero-social-link:focus {
+  color: var(--color-secondary);
+}
+
+.hero-summary-card {
+  position: relative;
+  max-width: 450px;
+  padding: 2.25rem;
+  margin-left: auto;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(23, 59, 87, 0.1);
+  border-radius: 1.25rem;
+  box-shadow: 0 24px 60px rgba(23, 59, 87, 0.14);
+}
+
+.hero-summary-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    var(--color-secondary),
+    var(--color-accent)
+  );
+}
+
+.hero-skill-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.1rem 0;
+}
+
+.hero-skill-item + .hero-skill-item {
+  border-top: 1px solid rgba(23, 59, 87, 0.1);
+}
+
+.hero-skill-item > i {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+}
+
+.hero-skill-item h2 {
+  color: var(--color-primary);
+}
+
+.hero-skill-item p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 4.5rem 0;
+  }
+
+  .hero-summary-card {
+    max-width: none;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding: 3.5rem 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
