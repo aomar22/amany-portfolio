@@ -237,3 +237,134 @@ body {
     font-size: 2.5rem;
   }
 }
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.section-eyebrow {
+  margin-bottom: 0.75rem;
+  color: var(--color-secondary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.section-description {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-section {
+  background-color: var(--color-surface);
+}
+
+.about-copy {
+  max-width: 760px;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.about-panel {
+  padding: 2rem;
+  background-color: var(--color-background);
+  border-left: 5px solid var(--color-secondary);
+  border-radius: 1rem;
+}
+
+.about-panel h3,
+.about-value h4 {
+  color: var(--color-primary);
+}
+
+.about-value {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.about-value + .about-value {
+  border-top: 1px solid rgba(23, 59, 87, 0.1);
+}
+
+.about-value > i {
+  color: var(--color-secondary);
+  font-size: 1.4rem;
+}
+
+.about-value p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.skills-section {
+  background-color: var(--color-background);
+}
+
+.skill-category {
+  padding: 1.75rem;
+  background-color: var(--color-surface);
+  border: 1px solid rgba(23, 59, 87, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(23, 59, 87, 0.06);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(23, 59, 87, 0.12);
+}
+
+.skill-category-icon {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.25rem;
+  color: var(--color-secondary);
+  background-color: rgba(22, 140, 140, 0.1);
+  border-radius: 0.75rem;
+  place-items: center;
+  font-size: 1.4rem;
+}
+
+.skill-category h3 {
+  margin-bottom: 1.25rem;
+  color: var(--color-primary);
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.skill-list li {
+  padding: 0.4rem 0.7rem;
+  color: var(--color-primary);
+  background-color: var(--color-background);
+  border: 1px solid rgba(23, 59, 87, 0.08);
+  border-radius: 999px;
+  font-size: 0.88rem;
+}
