@@ -53,7 +53,7 @@ function ProjectCard({ project }) {
                 rel="noreferrer"
                 className="btn hero-primary-button"
               >
-                Live project
+                {project.liveLabel ?? 'Live project'}
                 <i className="bi bi-box-arrow-up-right ms-2"></i>
               </a>
             )}

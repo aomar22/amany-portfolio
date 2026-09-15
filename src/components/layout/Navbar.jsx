@@ -5,7 +5,7 @@ function Navbar() {
     { label: 'Projects', href: '#projects' },
     { label: 'Skills', href: '#skills' },
     { label: 'Services', href: '#services' },
-    { label: 'Notes', href: '#notes' },
+    // { label: 'Notes', href: '#notes' },
     { label: 'Contact', href: '#contact' },
   ]
 
