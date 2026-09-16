@@ -26,13 +26,12 @@ function Contact() {
               <p className="section-eyebrow">Let’s connect</p>
 
               <h2>
-                Have an opportunity or a problem worth solving?
+                Let's build something meaningful together.
               </h2>
 
               <p className="contact-description">
-                I’m open to software development opportunities,
-                collaborative projects, and freelance conversations. Tell
-                me what you’re working on and how I may be able to help.
+                I’m open to software development opportunities and freelance work. If you have 
+                an opportunity or a problem to solve, feel free to reach out.
               </p>
 
               <div className="contact-location">
