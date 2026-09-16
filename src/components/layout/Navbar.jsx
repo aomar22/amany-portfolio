@@ -42,7 +42,7 @@ function Navbar() {
             ))}
 
             <li className="nav-item ms-lg-3">
-              <a
+              {/* <a
                 className="btn btn-warning fw-semibold"
                 href="/Amany-Omar-Resume.pdf"
                 target="_blank"
@@ -50,7 +50,7 @@ function Navbar() {
               >
                 <i className="bi bi-download me-2"></i>
                 Résumé
-              </a>
+              </a> */}
             </li>
           </ul>
         </div>
