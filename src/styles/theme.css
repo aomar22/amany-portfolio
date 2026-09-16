@@ -502,3 +502,332 @@ body {
   gap: 0.75rem;
   padding-top: 1rem;
 }
+
+/* Services Section */
+
+.services-section {
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(22, 140, 140, 0.1),
+      transparent 25%
+    ),
+    var(--color-background);
+}
+
+.service-card {
+  position: relative;
+  padding: 2rem;
+  background-color: var(--color-surface);
+  border: 1px solid rgba(23, 59, 87, 0.12);
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 30px rgba(23, 59, 87, 0.07);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(22, 140, 140, 0.45);
+  box-shadow: 0 20px 40px rgba(23, 59, 87, 0.12);
+}
+
+.service-card::before {
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+  left: 1.5rem;
+  height: 4px;
+  content: '';
+  background: linear-gradient(
+    90deg,
+    var(--color-secondary),
+    var(--color-accent)
+  );
+  border-radius: 0 0 999px 999px;
+}
+
+.service-icon {
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-surface);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  border-radius: 1rem;
+  place-items: center;
+  font-size: 1.5rem;
+}
+
+.service-card h3 {
+  margin-bottom: 0.75rem;
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}
+
+.service-card > p {
+  min-height: 4.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.service-deliverables {
+  display: grid;
+  gap: 0.7rem;
+  padding: 1.25rem 0 0;
+  margin: 1.25rem 0 0;
+  border-top: 1px solid rgba(23, 59, 87, 0.1);
+  list-style: none;
+}
+
+.service-deliverables li {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  color: var(--color-text);
+}
+
+.service-deliverables i {
+  color: var(--color-secondary);
+  font-size: 1.1rem;
+}
+/* Contact Section */
+
+.contact-section {
+  background-color: var(--color-surface);
+}
+
+.contact-panel {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2rem, 5vw, 4rem);
+  color: var(--color-surface);
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(244, 162, 97, 0.25),
+      transparent 25%
+    ),
+    linear-gradient(
+      135deg,
+      var(--color-primary),
+      var(--color-primary-light)
+    );
+  border-radius: 1.5rem;
+  box-shadow: 0 24px 55px rgba(23, 59, 87, 0.18);
+}
+
+.contact-panel .section-eyebrow {
+  color: var(--color-accent);
+}
+
+.contact-panel h2 {
+  max-width: 750px;
+  margin-bottom: 1.25rem;
+  color: var(--color-surface);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.15;
+}
+
+.contact-description {
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.contact-location {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.contact-location i {
+  color: var(--color-accent);
+}
+
+.contact-actions {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-primary-button,
+.contact-secondary-button {
+  padding: 0.8rem 1.25rem;
+  font-weight: 700;
+}
+
+.contact-primary-button {
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.contact-primary-button:hover,
+.contact-primary-button:focus {
+  color: var(--color-primary);
+  background-color: #ffc078;
+  border-color: #ffc078;
+}
+
+.contact-secondary-button {
+  color: var(--color-surface);
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.65);
+}
+
+.contact-secondary-button:hover,
+.contact-secondary-button:focus {
+  color: var(--color-primary);
+  background-color: var(--color-surface);
+  border-color: var(--color-surface);
+}
+
+.contact-github-link {
+  justify-self: center;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-github-link:hover,
+.contact-github-link:focus {
+  color: var(--color-accent);
+}
+.contact-email {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.contact-copy-button {
+  color: var(--color-surface);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.45);
+  font-weight: 700;
+}
+
+.contact-copy-button:hover,
+.contact-copy-button:focus {
+  color: var(--color-primary);
+  background-color: var(--color-surface);
+  border-color: var(--color-surface);
+}
+
+.contact-email-address {
+  justify-self: center;
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-email-address:hover,
+.contact-email-address:focus {
+  color: var(--color-accent);
+}
+
+@media (max-width: 575.98px) {
+  .contact-email {
+    grid-template-columns: 1fr;
+  }
+}
+/* Footer */
+
+.portfolio-footer {
+  padding: 3rem 0 1.5rem;
+  color: rgba(255, 255, 255, 0.78);
+  background-color: #102c42;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.2fr auto auto;
+  gap: 3rem;
+  align-items: start;
+}
+
+.footer-brand {
+  color: var(--color-surface);
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-content p {
+  max-width: 420px;
+  margin: 0.75rem 0 0;
+  line-height: 1.7;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-navigation a {
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+  color: var(--color-accent);
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-social-links a {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--color-surface);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  place-items: center;
+  text-decoration: none;
+}
+
+.footer-social-links a:hover,
+.footer-social-links a:focus {
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 767.98px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
