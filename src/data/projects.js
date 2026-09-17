@@ -71,6 +71,7 @@ export const projects = [
         'UI/UX Design',
     ],
     githubUrl: null,
+    videoUrl: null,
     // liveUrl:
     //     'https://www.figma.com/proto/pij7kmwn6onvYtZyjDHqO0/PRJ566_Mock-up-UI-UX--Backup-?node-id=148-2605&p=f&t=kUEwN27rYHlN0d09-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=148%3A2605',
     // liveLabel: 'View Figma prototype',
@@ -104,15 +105,16 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
-    videoLinks: [
-    {
-        // label: 'Azure deployment',
-        // url: 'https://youtu.be/m43onpSf_TQ',
-    },
-    {
-        // label: 'Secure GitOps platform',
-        // url: 'https://youtu.be/pJVKg7TWD20',
-    },
-    ],
+    videoUrl: null,
+    // videoLinks: [
+    // {
+    //     // label: 'Azure deployment',
+    //     // url: 'https://youtu.be/m43onpSf_TQ',
+    // },
+    // {
+    //     // label: 'Secure GitOps platform',
+    //     // url: 'https://youtu.be/pJVKg7TWD20',
+    // },
+    // ],
     },
 ]
